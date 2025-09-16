@@ -1,0 +1,71 @@
+/* flexbox.css */
+
+/* Reset dasar */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #f0f4ff, #fef6e4);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container utama */
+.container-satu {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Sidebar kiri */
+.sidebar-satu {
+    flex: 1;
+    order: 1; /* urutan pertama */
+    background: #e6f0ff;
+    padding: 20px;
+}
+
+/* Kolom utama */
+.kolom-utama {
+    flex: 2;
+    order: 2;
+    padding: 20px;
+    background: #fafafa;
+}
+
+/* Sidebar kanan */
+.sidebar-dua {
+    flex: 1;
+    order: 3; /* urutan terakhir */
+    background: #fff3e6;
+    padding: 20px;
+}
+
+/* Tambahan styling */
+.sidebar-satu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-satu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-satu a {
+    text-decoration: none;
+    color: #0077cc;
+}
+
+.sidebar-satu a:hover {
+    text-decoration: underline;
+}
+
+.gambar-artikel {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
